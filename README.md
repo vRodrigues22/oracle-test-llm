@@ -18,11 +18,17 @@ Suporta múltiplos provedores:
 🏗 Estrutura do Projeto:
 
 oracle_test/
+
 │
+
 ├── requirements.txt
+
 ├── .env.example
+
 ├── README.md
+
 │
+
 ├── config.py
 ├── cache.py
 ├── costs.py
