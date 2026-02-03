@@ -1,0 +1,23 @@
+oracle_test/
+│
+├── requirements.txt
+├── .env.example
+├── README.md
+│
+├── config.py
+├── cache.py
+├── costs.py
+├── schemas.py
+│
+├── llm_oracle.py
+├── traditional_oracle.py
+├── experiment_runner.py
+├── metrics.py
+│
+├── prompts/
+│   ├── llm_system.txt
+│   └── llm_instructions.txt
+│
+└── data/
+    ├── test_cases.json
+    └── ground_truth.json

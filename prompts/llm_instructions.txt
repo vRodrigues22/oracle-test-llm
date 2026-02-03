@@ -1,0 +1,29 @@
+Você receberá um JSON com:
+- output_real: saída real do sistema (texto/log/mensagem)
+- expected_claim: afirmação esperada (intenção semântica)
+- criteria: critérios adicionais (must_include, must_not_include, appropriateness, etc.)
+- input_context: contexto (idioma, tipo de usuário, severidade, domínio)
+
+Tarefa:
+1) Avalie se output_real satisfaz expected_claim semanticamente.
+2) Verifique se viola critérios (ex.: must_not_include: stack trace, dados sensíveis).
+3) Produza uma decisão consistente.
+
+Retorne JSON no formato:
+{
+  "verdict": "PASS" | "FAIL" | "INCONCLUSIVE",
+  "score": 0..1,
+  "reason": "curto e objetivo",
+  "evidence": ["trechos do output_real que sustentam a decisão"],
+  "missing_requirements": ["requisitos não atendidos"]
+}
+
+Avalie semanticamente se output_real satisfaz expected_claim e atende criteria.
+
+Regras:
+- PASS: atende a intenção principal e NÃO viola criteria.must_not_include.
+- FAIL: não atende a intenção OU viola criteria.must_not_include.
+- INCONCLUSIVE: apenas se output_real estiver vazio OU expected_claim estiver vazio.
+
+Retorne JSON no schema exigido.
+

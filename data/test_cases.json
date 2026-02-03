@@ -1,0 +1,842 @@
+[
+  {
+    "id": "AUTO-LOGIN-PASS-000",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Não foi possível entrar. Usuário ou senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-001",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sistema indisponível no momento. Tente mais tarde.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-002",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Falha no login: usuário/senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-003",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Login realizado com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-004",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Acesso negado: credenciais inválidas.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-005",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sua senha foi alterada com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-006",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Não foi possível entrar. Usuário ou senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-007",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sistema indisponível no momento. Tente mais tarde.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-008",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Falha no login: usuário/senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-009",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Login realizado com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-010",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Acesso negado: credenciais inválidas.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-011",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sua senha foi alterada com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-012",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Não foi possível entrar. Usuário ou senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-013",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sistema indisponível no momento. Tente mais tarde.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-014",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Falha no login: usuário/senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-015",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Login realizado com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-016",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Acesso negado: credenciais inválidas.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-017",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sua senha foi alterada com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-018",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Não foi possível entrar. Usuário ou senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-019",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sistema indisponível no momento. Tente mais tarde.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-020",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Falha no login: usuário/senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-021",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Login realizado com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-022",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Acesso negado: credenciais inválidas.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-023",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sua senha foi alterada com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-024",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Não foi possível entrar. Usuário ou senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-025",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sistema indisponível no momento. Tente mais tarde.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-026",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Falha no login: usuário/senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-027",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Login realizado com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-028",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Acesso negado: credenciais inválidas.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-029",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sua senha foi alterada com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-030",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Não foi possível entrar. Usuário ou senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-031",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sistema indisponível no momento. Tente mais tarde.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-032",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Falha no login: usuário/senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-033",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Login realizado com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-034",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Acesso negado: credenciais inválidas.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-035",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sua senha foi alterada com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-036",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Não foi possível entrar. Usuário ou senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-037",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Sistema indisponível no momento. Tente mais tarde.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-PASS-038",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Falha no login: usuário/senha incorretos.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  },
+  {
+    "id": "AUTO-LOGIN-FAIL-039",
+    "category": "auth.login",
+    "input_context": {
+      "language": "pt-BR",
+      "user_type": "end_user",
+      "severity": "medium"
+    },
+    "output_real": "Login realizado com sucesso.",
+    "expected_claim": "A operação falhou devido a credenciais inválidas e a mensagem é apropriada para o usuário final.",
+    "criteria": {
+      "semantic_equivalence": true,
+      "appropriateness": true,
+      "must_not_include": [
+        "stack trace",
+        "Exception:",
+        "token",
+        "senha:"
+      ]
+    }
+  }
+]
